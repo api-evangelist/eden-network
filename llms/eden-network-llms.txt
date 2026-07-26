@@ -1,0 +1,22 @@
+# Eden Network
+
+> Eden Network is an Ethereum MEV / block-building and orderflow infrastructure project (EDEN token, launched 2021). It operated a mempool streaming service, block-builder and proxy (eden-geth / eden-proxy), and data tooling for the Ethereum ecosystem. The primary web property (edennetwork.io) has since lapsed; the canonical developer surface is the GitHub organization and published npm / Go packages.
+
+## APIs
+
+- [Eden Mempool Streaming Service (gRPC)](https://github.com/eden-network/mempool-service): StreamService.StreamRawTransactions streams raw mempool transactions over gRPC with filters/includes and an auth header.
+
+## Specs
+
+- [Mempool Service Protobuf](grpc/eden-network-mempool-service.proto): proto3 definition of StreamService / StreamRawTransactionsRequest / RawTransaction.
+
+## Packages
+
+- [@eden-network/data (npm)](https://www.npmjs.com/package/@eden-network/data): access Eden Network subgraphs and contracts.
+- [@eden-network/dex-api-client (npm)](https://www.npmjs.com/package/@eden-network/dex-api-client): Eden Network DEX API client.
+- [@eden-network/dex-api-client-react (npm)](https://www.npmjs.com/package/@eden-network/dex-api-client-react): React bindings for the DEX API client.
+- [github.com/eden-network/mempool-service (Go)](https://pkg.go.dev/github.com/eden-network/mempool-service): pre-built gRPC client for the mempool streaming service.
+
+## Docs
+
+- [GitHub organization](https://github.com/eden-network): source of truth for repositories, protobuf, and tooling.

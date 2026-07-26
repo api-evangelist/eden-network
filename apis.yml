@@ -1,8 +1,25 @@
 aid: eden-network
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/eden-network.png
 name: Eden Network
-description: 'Eden Network is a company surfaced as a portfolio company of multicoin-capital and added
-  to the API Evangelist network as a stub for enrichment. Sector: crypto-web3. This profile is a lead
-  awaiting the enrichment pipeline.'
+description: 'Eden Network is an Ethereum MEV, block-building, and orderflow infrastructure
+  project (EDEN token, launched 2021, evolving from the earlier Archer DAO relay). It
+  operated a gRPC mempool streaming service, an Eden block builder and reverse proxy
+  (eden-geth / eden-proxy), subgraph-backed data tooling, and a DEX API for the Ethereum
+  ecosystem. The original edennetwork.io web property has since lapsed; the canonical,
+  still-live developer surface is the eden-network GitHub organization and the published
+  npm and Go packages. Surfaced as a portfolio company of Multicoin Capital and enriched
+  from those public sources.'
 url: https://raw.githubusercontent.com/api-evangelist/eden-network/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,11 +29,25 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
 - Crypto Web3
-apis: []
+- Ethereum
+- MEV
+- Blockchain
+- DeFi
+- Mempool
+- gRPC
+apis:
+- name: Eden Mempool Streaming Service
+  description: gRPC service that streams raw Ethereum mempool transactions. StreamService.StreamRawTransactions
+    accepts filters, includes, and an auth header, returning a server stream of RLP-encoded
+    raw transactions.
+  humanURL: https://github.com/eden-network/mempool-service
+  properties:
+  - type: Protobuf
+    url: grpc/eden-network-mempool-service.proto
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
@@ -25,3 +56,16 @@ maintainers:
 common:
 - type: Website
   url: https://edennetwork.io
+- type: GitHubOrganization
+  url: https://github.com/eden-network
+- type: Packages
+  url: packages/eden-network-packages.yml
+- type: SDKs
+  url: packages/eden-network-packages.yml
+- type: LLMsTxt
+  url: llms/eden-network-llms.txt
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence

@@ -1,0 +1,40 @@
+generated: '2026-07-19'
+method: searched
+source: https://www.npmjs.com/org/eden-network
+packages:
+  - language: javascript
+    registry: npm
+    name: "@eden-network/data"
+    version: 1.1.1
+    url: https://www.npmjs.com/package/@eden-network/data
+    repository: https://github.com/eden-network/eden-data
+    install: yarn add @eden-network/data
+    license: MIT
+    description: Helper library that abstracts access to Eden Network subgraphs and contracts, giving a simple API for retrieving Eden Network data.
+    official: true
+  - language: javascript
+    registry: npm
+    name: "@eden-network/dex-api-client"
+    version: 0.4.0
+    url: https://www.npmjs.com/package/@eden-network/dex-api-client
+    install: yarn add @eden-network/dex-api-client
+    license: MIT
+    description: Client library for the Eden Network DEX API.
+    official: true
+  - language: javascript
+    registry: npm
+    name: "@eden-network/dex-api-client-react"
+    version: 0.2.1
+    url: https://www.npmjs.com/package/@eden-network/dex-api-client-react
+    install: yarn add @eden-network/dex-api-client-react
+    license: MIT
+    description: React bindings for the Eden Network DEX API client.
+    official: true
+  - language: go
+    registry: pkg.go.dev
+    name: github.com/eden-network/mempool-service
+    url: https://pkg.go.dev/github.com/eden-network/mempool-service
+    repository: https://github.com/eden-network/mempool-service
+    install: go get github.com/eden-network/mempool-service
+    description: Pre-built gRPC client (Protobuf definitions) for the Eden Mempool Streaming Service.
+    official: true
