@@ -50,6 +50,7 @@ tags:
 - DeFi
 - Mempool
 - gRPC
+- Web3
 apis:
 - name: Eden Mempool Streaming Service
   description: gRPC service that streams raw Ethereum mempool transactions. StreamService.StreamRawTransactions
