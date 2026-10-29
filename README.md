@@ -64,6 +64,74 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Eden Network is a company surfaced as a portfolio company of multicoin-capital and added to the API Evangelist network as a stub for enrichment. Sector: crypto-web3. This profile is a lead awaiting the enrichment pipeline.
+Eden Network is an Ethereum MEV, block-building, and orderflow infrastructure project (EDEN token, launched 2021, evolving from the earlier Archer DAO relay). It operated a gRPC mempool streaming service, an Eden block builder and reverse proxy (eden-geth / eden-proxy), subgraph-backed data tooling, and a DEX API for the Ethereum ecosystem. The original edennetwork.io web property has since lapsed; the canonical, still-live developer surface is the eden-network GitHub organization and the published npm and Go packages. Surfaced as a portfolio company of Multicoin Capital and enriched from those public sources.
 
-Backed by: multicoin-capital — https://edennetwork.io
+**Areas:** Company · Web3 · Ethereum · MEV · Blockchain · DeFi · Mempool · gRPC
+
+## Eden Network on APIs.io
+
+Everything profiled for Eden Network is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/eden-network/](https://apis.io/providers/eden-network/)** — or go straight to one of the APIs or properties below.
+
+### APIs (1)
+
+- [Eden Mempool Streaming Service](https://apis.io/apis/eden-network/eden-mempool-streaming-service/) — gRPC service that streams raw Ethereum mempool transactions. StreamService.StreamRawTransactions accepts filters, includes, and an auth header, returning a…
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://edennetwork.io)
+- [GitHub](https://github.com/eden-network)
+
+## API Evangelist rating
+
+**Kin Score 11.9** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 64.3 |
+| Contract quality | 24.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 2.6 |
+| Developer ergonomics | 7.1 |
+| Access clarity | 0.0 |
+
+**Agent readiness 12.9** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | yes |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 0.0** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/eden-network/](https://apis.io/providers/eden-network/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Eden Network: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/eden-network/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
